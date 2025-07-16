@@ -17,7 +17,7 @@ export const apiClient = async (
     ...(!isFormData && { "Content-Type": "application/json" }),
   };
 
-  const res = await fetch(`http://localhost:8000${path}`, {
+  const res = await fetch(`https://feelings-detector.onrender.com${path}`, {
     ...options,
     headers,
   });
